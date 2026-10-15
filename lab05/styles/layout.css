@@ -34,9 +34,9 @@ header {
 aside {
     border: 4px inset purple;
     border-radius: 14px;
-    margin: 1.5em;
-    padding: 2em;
-    width: 23%;
+    margin: 1em;
+    padding: 1em;
+    width: 25%;
     background: url(images/fade.jpg) repeat-x top left;
     float: right;
     box-shadow: 10px 10px 5px #aaaaaa;

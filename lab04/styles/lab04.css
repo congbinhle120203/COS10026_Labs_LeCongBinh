@@ -1,46 +1,57 @@
 /*
 filename: lab04.css
-author: Lê Công Bình
+author: Le Cong Binh
 created: 08/10/2026
 last modified: 08/10/2026
 description: lab04.html
 */
+
 * {
   font-family: Calibri, sans-serif;
   color: #2F4F4F;
 }
+
 h1 {
   color: purple;
   font-size: 2em;
   font-weight: bold;
 }
+
 h2 {
   color: rgb(0, 128, 128);
   font-weight: bold;
   font-size: 1.5em;
 }
+
 aside, footer {
   font-style: italic;
 }
+
 h1, h2, h3 {
   font-family: Arial, sans-serif;
 }
+
 table, th, td {
   border: 1px solid black;
 }
+
 #images {
   text-align: center;
 }
+
 #headings-title {
   color: red;
+
 }
 .special {
   color: darkorange;
   font-weight: bold;
 }
+
 .month-heading-right {
   text-align: right;
 }
+
 nav a[href] {
   text-decoration: none;
   padding: 0.2em 0.6em;
@@ -48,12 +59,15 @@ nav a[href] {
   display: inline-block;
   margin-right: 4px;
 }
+
 ol ul {
   list-style-type: square;
 }
+
 aside:hover {
   display: none;
 }
+
 nav a[href]:hover {
   background-color: lightblue;
   border-color: darkblue;

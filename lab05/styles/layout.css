@@ -1,0 +1,122 @@
+/* 
+author: Le Cong Binh
+Lab 05 - css styling layout
+*/
+
+/* --- Step 2 --- */
+/* don't hide the aside when hovering, make it visible */
+aside:hover {
+    display: block;
+}
+
+/* menu on the same line */
+.menu {
+    display: inline-block;
+}
+
+/* delete default dots of ul if using ul for menu */
+nav ul {
+    list-style: none;
+}
+
+
+/* --- Step 3 --- */
+/* simple framed header centered at the top */
+header {
+    border: 1px solid darkgray;
+    margin: 0.5em;
+    padding: 0.5em;
+    background-color: lightgray;
+    text-align: center;
+}
+
+/* float aside to the right and add a shadow */
+aside {
+    border: 4px inset purple;
+    border-radius: 14px;
+    margin: 1.5em;
+    padding: 2em;
+    width: 23%;
+    background: url(images/fade.jpg) repeat-x top left;
+    float: right;
+    box-shadow: 10px 10px 5px #aaaaaa;
+}
+
+
+/* --- Step 4 --- */
+/* push lists to the left */
+#lists {
+    float: left;
+}
+
+/* center table inside its column */
+table {
+    margin: auto;
+}
+
+/* push tables to the right */
+#tables {
+    float: right;
+}
+
+/* drop hyperlinks below lists on the left so they don't awkwardly cram into empty spaces */
+#hyperlinks {
+    clear: left;
+    float: left;
+}
+
+/* place images on the right under the table */
+#images {
+    float: right;
+}
+
+/* neat border outline around the preview image */
+figure {
+    border: 2px solid #ccc;
+}
+
+/* split the 4 sections evenly into two 50% width columns */
+#lists, #images, #tables, #hyperlinks {
+    width: 50%;
+    text-align: center; 
+}
+
+/* list bullets look weird when centered, align text back to the left */
+ol, ul, dl {
+    text-align: left;
+}
+
+/* stop the page from collapsing too thin on narrow viewports */
+article {
+    min-width: 30em;
+}
+
+
+/* --- Step 5 --- */
+/* line on top and clear floats so footer can be at the bottom of page */
+footer {
+    border-top: 4px double darkgray;
+    clear: both;
+}
+
+/* divide footer into 3 equal parts on 1 row */
+footer p {
+    display: inline-block;
+    width: 33%;
+}
+
+/* first paragraph -> left */
+footer p:first-child {
+    float: left;
+}
+
+/* middle paragraph -> center */
+footer p:nth-child(2) {
+    text-align: center;
+}
+
+/* last paragraph -> right */
+footer p:last-child {
+    float: right;
+    text-align: right;
+}

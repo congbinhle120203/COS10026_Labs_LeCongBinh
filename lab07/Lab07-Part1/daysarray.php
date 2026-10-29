@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="description" content="Week 07 Lab - Task 2 Days Array" />
-  <meta name="keywords" content="PHP, arrays, days of the week" />
+  <meta name="keywords" content="PHP, arrays, days in a week" />
   <meta name="author" content="Le Cong Binh" />
   <title>PHP Variables, Arrays and Operators</title>
 </head>

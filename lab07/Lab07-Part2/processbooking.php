@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="description" content="Rohirrim Tour Booking Confirmation" />
-  <meta name="keywords" content="MiddleEarth, Tours, Rohan, Confirmation" />
+  <meta name="keywords" content="middleEarth, tours, rohan, confirmation" />
   <meta name="author" content="Le Cong Binh" />
   <title>Booking Confirmation</title>
 </head>
@@ -45,24 +45,27 @@
     $species = "Unknown";
   }
 
-  $tour = "";
+  $tour_list = array();
   if (isset($_POST["accom"])) {
-    $tour = $tour . "Accommodation ";
+    $tour_list[] = "Accommodation";
   }
   if (isset($_POST["4day"])) {
-    if ($tour != "") {
-      $tour = $tour . "and ";
-    }
-    $tour = $tour . "Four-day tour ";
+    $tour_list[] = "Four-day tour";
   }
   if (isset($_POST["10day"])) {
-    if ($tour != "") {
-      $tour = $tour . "and ";
-    }
-    $tour = $tour . "Ten-day tour ";
+    $tour_list[] = "Ten-day tour";
   }
-  if ($tour == "") {
-    $tour = "no tours";
+
+  if (count($tour_list) == 0) {
+    $tour_message = "You are not booked on any tours.";
+  } else {
+    if (count($tour_list) == 1) {
+      $tour_message = "You are now booked on the " . $tour_list[0];
+    } elseif (count($tour_list) == 2) {
+      $tour_message = "You are now booked on the " . $tour_list[0] . " and " . $tour_list[1];
+    } else {
+      $tour_message = "You are now booked on the " . $tour_list[0] . ", " . $tour_list[1] . " and " . $tour_list[2];
+    }
   }
 
   if (isset($_POST["food"])) {
@@ -84,7 +87,7 @@
   }
 
   echo "<p>Welcome $firstname $lastname !<br />";
-  echo "You are now booked on the $tour<br />";
+  echo "$tour_message<br />";
   echo "Species: $species<br />";
   echo "Age: $age<br />";
   echo "Meal Preference: $food<br />";

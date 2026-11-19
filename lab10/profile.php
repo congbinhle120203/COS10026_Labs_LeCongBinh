@@ -2,9 +2,7 @@
 /*
   profile.php - Week 10 lab: show the logged-in user's details and let them edit the email
   Le Cong Binh (106419738)
-  GenAI acknowledgement: drafted with Claude (Anthropic), reviewed and tested by me.
-  Prompt: "Help me do the Week 10 profile edit lab: login.php, profile.php and
-  update_profile.php with sessions and an SQL UPDATE."
+  GenAI: assisted by Claude (Anthropic), reviewed and tested by me. Prompt: "Week 10 profile edit lab"
 */
 session_start();
 

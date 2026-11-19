@@ -4,9 +4,7 @@
   Le Cong Binh (106419738)
 
   The same page shows the form (GET) and checks the login (POST).
-  GenAI acknowledgement: drafted with Claude (Anthropic), reviewed and tested by me.
-  Prompt: "Help me do the Week 10 profile edit lab: login.php, profile.php and
-  update_profile.php with sessions and an SQL UPDATE."
+  GenAI: assisted by Claude (Anthropic), reviewed and tested by me. Prompt: "Week 10 profile edit lab"
 */
 session_start();
 

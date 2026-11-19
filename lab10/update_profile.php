@@ -3,9 +3,7 @@
   update_profile.php - Week 10 lab: save the new email with an SQL UPDATE
   Le Cong Binh (106419738)
   This page shows nothing: it updates the database, then redirects to profile.php.
-  GenAI acknowledgement: drafted with Claude (Anthropic), reviewed and tested by me.
-  Prompt: "Help me do the Week 10 profile edit lab: login.php, profile.php and
-  update_profile.php with sessions and an SQL UPDATE."
+  GenAI: assisted by Claude (Anthropic), reviewed and tested by me. Prompt: "Week 10 profile edit lab"
 */
 session_start();
 
